@@ -81,3 +81,4 @@ function searchTimeZone(data){
     country.textContent = data.country;
     city.textContent = data.city;
 }
+document.addEventListener("DOMContentLoaded", getLocation);
