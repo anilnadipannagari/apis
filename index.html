@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeZone API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TimeZone API</h1>
+        <h1>Your Current TimeZone</h1>
+        <div class="data-container">
+            <p>Name of TimeZone : <span id="name"></span></p>
+            <div class="cords">
+                <p class="lat">Lat:<span id="lati"></span></p>
+                <p class="long">Long:<span id="longi"></span></p>
+            </div>
+            <p>Offset STD : <span id="offSTD"></span></p>
+            <p>Offset STD Seconds : <span id="offSTDsec"></span></p>
+            <p>Offset DST : <span id="offDST"></span></p>
+            <p>Offset DST Seconds : <span id="offDSTsec"></span></p>
+            <p>Country : <span id="country"></span></p>
+            <p>City : <span id="city"></span></p>
+            <p>Postcode : <span id="post"></span></p>
+        </div>
+    </div>
+
+    <div class="search-sec">
+        <div class="searchbox">
+            <h1>Enter Address</h1>
+            <form onsubmit="return search()">
+                <input type="text" id="inputbox" placeholder="Address">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <p id="error" class="hide">*Please enter a valid address.</p>
+    <div class="result-container hide" id="resultcont">
+        <h1>Your Result</h1>
+        <div class="data-container result">
+            <p>Name of TimeZone : <span id="name-r"></span></p>
+            <div class="cords">
+                <p class="lat">Lat:<span id="lati-r"></span></p>
+                <p class="long">Long:<span id="longi-r"></span></p>
+            </div>
+            <p>Offset STD : <span id="offSTD-r"></span></p>
+            <p>Offset STD Seconds : <span id="offSTDsec-r"></span></p>
+            <p>Offset DST : <span id="offDST-r"></span></p>
+            <p>Offset DST Seconds : <span id="offDSTsec-r"></span></p>
+            <p>Country : <span id="country-r"></span></p>
+            <p>City : <span id="city-r"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
