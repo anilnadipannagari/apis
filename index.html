@@ -11,7 +11,7 @@
     <div class="container">
         <h1>TimeZone API</h1>
         <h1>Your Current TimeZone</h1>
-        <div class="data-container">
+        <div class="container-data">   
             <p>Name of TimeZone : <span id="name"></span></p>
             <div class="cords">
                 <p class="lat">Lat:<span id="lati"></span></p>
@@ -31,15 +31,15 @@
         <div class="searchbox">
             <h1>Enter Address</h1>
             <form onsubmit="return search()">
-                <input type="text" id="inputbox" placeholder="Address">
+                <input type="text" id="inputaddress" placeholder="Address">
                 <button type="submit">Submit</button>
             </form>
         </div>
     </div>
-    <p id="error" class="hide">*Please enter a valid address.</p>
-    <div class="result-container hide" id="resultcont">
+    <p id="error" class="hide">*Please enter a valid address.</p><br><br>
+    <div class="result-container hide" id="contresult">
         <h1>Your Result</h1>
-        <div class="data-container result">
+        <div class="container-data result">
             <p>Name of TimeZone : <span id="name-r"></span></p>
             <div class="cords">
                 <p class="lat">Lat:<span id="lati-r"></span></p>
